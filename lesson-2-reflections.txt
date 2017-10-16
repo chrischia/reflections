@@ -7,21 +7,22 @@ How is the staging area different from the working directory and the repository?
 it places files that are ready to be committed into the repository together without requiring that all files in a working directory are placed in a single commit
 
 What value do you think it offers?
-it means you can choose to only commit fiels that you have changed or that go logically together into one commit even if the working dorectory contains many other files
+it means you can choose to only commit fiels that you have changed or that go logically together into one commit even if the working dorectory contains many other filesgit diff --staged
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
+You can use git diff to compare what is in your working directory and whatg is in the staging area, and git diff --staged to compare what is in the staging area to the most recent commit that you have changedgit status
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+very useful in developing new functionality that needs to be tested and may not be used in newer versions of the application
 
 How do the diagrams help you visualize the branch structure?
+Very useful to understand branch map for the project
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+merges all of the reachable commits together between the two branches. represented in the diagram to show that one head or branch tip is created from 2 branches
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
-manually?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
 
 
  
